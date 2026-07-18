@@ -1,4 +1,5 @@
 name: Deploy prototype to GitHub Pages
+# Publishes the self-contained prototype after repository Pages is enabled.
 
 on:
   push:
