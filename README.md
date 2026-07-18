@@ -38,9 +38,9 @@ Approve a controlled 90-day stabilisation phase that fixes shared design-system 
 
 ## Analytical assets
 
-- Formula-driven Excel decision model and frozen simulation audit trail
+- Sanitised reference tables and a frozen 1,000-run simulation audit trail
 - Python reproduction of MCDA and base cost-benefit calculations
-- Extracted reference tables for transparent review
+- Source-to-output reconciliation tests for transparent review
 - Accessible HTML prototype
 - Automated unit and reconciliation tests
 
@@ -50,7 +50,6 @@ Approve a controlled 90-day stabilisation phase that fixes shared design-system 
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python scripts/extract_workbook_reference.py
 python analysis.py
 python -m unittest discover -s tests -v
 ```

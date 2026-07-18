@@ -12,7 +12,7 @@
 3. Select **uploading an existing file**.
 4. In Finder, open the extracted project folder and press **Command + Shift + .** to show `.github` and `.gitignore`.
 5. Drag everything inside the folder into GitHub. Do not upload the ZIP or outer folder.
-6. Confirm that `.github/workflows/quality.yml`, `.gitignore`, `README.md`, `analysis.py`, `data`, `docs`, `outputs`, `prototype`, `scripts` and `tests` are staged.
+6. Confirm that `.github/workflows/quality.yml`, `.gitignore`, `README.md`, `analysis.py`, `data`, `docs`, `outputs`, `prototype` and `tests` are staged.
 7. Commit directly to `main` with `Add accessible employee services business case`.
 
 ## Verify and present
