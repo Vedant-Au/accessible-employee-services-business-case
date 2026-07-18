@@ -1,66 +1,50 @@
-# Accessible Employee Services Business Case
+# Accessible Employee Services: Investment and Delivery Model
 
-**A prioritisation, cost-benefit and delivery model for making high-use employee self-service journeys accessible.**
+**Turning accessibility findings into a prioritised investment case, controlled delivery plan and working service prototype.**
 
 [![Quality checks](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml)
-[![Live prototype](https://img.shields.io/badge/live-accessible_prototype-0B6E4F)](https://vedant-au.github.io/accessible-employee-services-business-case/)
+[![Live prototype](https://img.shields.io/badge/open-live_prototype-0B6E4F)](https://vedant-au.github.io/accessible-employee-services-business-case/)
 
-**Portfolio:** [Digital inclusion](https://github.com/Vedant-Au/ons-census-2031-digital-inclusion-risk) · [Enterprise risk](https://github.com/Vedant-Au/enterprise-risk-management-framework) · [Carbon modelling](https://github.com/Vedant-Au/offshore-wind-carbon-footprint-model) · [Workflow automation](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model)
+## The decision
 
-> Portfolio context: this repository develops an MSc group case study into an auditable analyst portfolio. “GlobalTech” is the case organisation. The outputs are decision-support estimates, not a production accessibility certification or legal advice.
+GlobalTech, the case organisation, needed to decide whether accessibility remediation should be handled as a series of page fixes or as a governed service-improvement programme.
 
-## Recruiter quick scan
+My recommendation is a **controlled 90-day stabilisation phase**: fix shared design-system barriers, establish a WCAG 2.2 AA release gate and validate the highest-risk employee journeys before scaling the full eight-month programme.
 
-| Lens | Evidence |
-| --- | --- |
-| Business analysis | Problem framing, prioritisation, requirements, roadmap and benefits case |
-| Decision modelling | MCDA, cost-benefit analysis and 1,000-run uncertainty testing |
-| Delivery thinking | 90-day stabilisation phase, release gates and outcome measures |
-| Technical assurance | Reproducible Python, reconciliation tests and an accessible prototype |
+## Case in numbers
 
-**Contribution and provenance:** the source was an MSc group case. This repository is an individual portfolio reconstruction that converts the case evidence into a reproducible model, decision narrative and working prototype. Estimates remain assumptions to validate in discovery.
-
-## Decision required
-
-Approve a controlled 90-day stabilisation phase that fixes shared design-system barriers, establishes a WCAG 2.2 AA release gate and validates the highest-risk employee journeys before scaling an eight-month programme.
-
-## Evidence at a glance
-
-| Signal | Result | Implication |
+| Evidence | Result | Why it matters |
 | --- | ---: | --- |
-| Employee and contractor population | 400,000 | Self-service failure can create enterprise-scale support demand |
-| Annual views across four pages | 561,005 | The analysed journeys are materially used |
-| Estimated accessibility issues | 137 | Manual verification and prioritised remediation are required |
-| First redesign priority | Training & Learning, 88.0/100 | Highest combined traffic, issues and process exposure |
-| Base implementation cost | £306,273 | Controlled programme investment |
-| Base three-year NPV | £787,496 | Positive but assumption-dependent business case |
-| Frozen simulation positive-NPV rate | 98% | Reported model remains positive across most sampled cases |
+| Employee and contractor population | 400,000 | Small failure rates can create enterprise-scale support demand |
+| Annual views across four services | 561,005 | The affected journeys are materially used |
+| Issues identified in the case evidence | 137 | Remediation requires prioritisation, not a flat backlog |
+| Highest-priority service | Training & Learning, 88/100 | Highest combined exposure across traffic, issues and process risk |
+| Base implementation cost | £306,273 | Investment required under the case assumptions |
+| Base three-year NPV | £787,496 | Positive scenario, subject to discovery validation |
+| Positive-NPV simulations | 98% of 1,000 | The reported model is robust across most sampled assumptions |
 
 ![Priority scores](outputs/figures/priority_scores.png)
 
 ![NPV uncertainty](outputs/figures/npv_distribution.png)
 
-## Recommendation
+## From analysis to delivery
 
-1. Fix shared patterns before individual pages: colour tokens, focus, landmarks, headings, forms and error handling.
-2. Prioritise Training & Learning and HR Portal for deeper redesign.
-3. Require automated, keyboard, screen-reader and disabled-employee task testing before release.
-4. Track employee task success, accessibility-related support demand, regression failures and exception ageing.
-5. Validate model assumptions during discovery before committing the full budget.
+This implementation connects four artefacts that are often produced separately:
 
-## Working prototype
+1. **Prioritisation model** - MCDA ranks services using traffic, issue volume, process criticality, legal/HR sensitivity and feasibility.
+2. **Benefits case** - implementation cost, annual benefit, NPV, benefit-cost ratio and payback are calculated from explicit assumptions.
+3. **Delivery backlog** - each remediation item has an owner, test method, acceptance criterion and delivery horizon.
+4. **Service prototype** - the [interactive employee portal](https://vedant-au.github.io/accessible-employee-services-business-case/) demonstrates skip navigation, landmarks, labelled inputs, visible focus and text-based status.
 
-[Launch the interactive prototype](https://vedant-au.github.io/accessible-employee-services-business-case/) or serve [`prototype/index.html`](prototype/index.html) locally. It demonstrates skip navigation, semantic landmarks, labelled inputs, visible focus and text-based status. Automated validation is useful evidence, not certification; manual assistive-technology and user testing remain required.
+The key design choice was to fix reusable patterns before individual pages. Colour tokens, focus states, landmarks, headings, forms and error handling create leverage across multiple employee journeys.
 
-## Analytical assets
+## What I would validate next
 
-- Sanitised reference tables and a frozen 1,000-run simulation audit trail
-- Python reproduction of MCDA and base cost-benefit calculations
-- Source-to-output reconciliation tests for transparent review
-- Accessible HTML prototype
-- Automated unit and reconciliation tests
+The financial model is decision support, not a guaranteed return. Before committing the full budget I would validate support-demand volumes, loaded staff costs, benefit attribution, remediation estimates and disabled-employee task success. Automated accessibility checks would be supplemented with keyboard, screen-reader and user testing.
 
-## Reproduce
+See the [methodology](docs/METHODOLOGY.md) and [validation record](docs/VALIDATION.md) for formulas, assumptions and evidence limits.
+
+## Reproduce the analysis
 
 ```bash
 python -m venv .venv
@@ -70,4 +54,17 @@ python analysis.py
 python -m unittest discover -s tests -v
 ```
 
-See [methodology](docs/METHODOLOGY.md), [validation status](docs/VALIDATION.md), and [asset notice](ASSET_NOTICE.md).
+## Repository map
+
+```text
+analysis.py           MCDA and financial-model reproduction
+data/reference/       Sanitised case inputs and simulation trail
+docs/                 Methodology and validation record
+outputs/              Reconciled decision tables and figures
+prototype/            Accessible employee-service implementation
+tests/                Calculation and reconciliation tests
+```
+
+## Evidence boundary
+
+This is a sanitised implementation derived from an MSc group case. GlobalTech is the case organisation. The results are not a production accessibility certification or legal advice, and the source workbook, submitted report and presentation are excluded. See [ASSET_NOTICE.md](ASSET_NOTICE.md).
