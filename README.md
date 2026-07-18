@@ -2,7 +2,23 @@
 
 **A prioritisation, cost-benefit and delivery model for making high-use employee self-service journeys accessible.**
 
+[![Quality checks](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml)
+[![Live prototype](https://img.shields.io/badge/live-accessible_prototype-0B6E4F)](https://vedant-au.github.io/accessible-employee-services-business-case/)
+
+**Portfolio:** [Digital inclusion](https://github.com/Vedant-Au/ons-census-2031-digital-inclusion-risk) · [Enterprise risk](https://github.com/Vedant-Au/enterprise-risk-management-framework) · [Carbon modelling](https://github.com/Vedant-Au/offshore-wind-carbon-footprint-model) · [Workflow automation](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model)
+
 > Portfolio context: this repository develops an MSc group case study into an auditable analyst portfolio. “GlobalTech” is the case organisation. The outputs are decision-support estimates, not a production accessibility certification or legal advice.
+
+## Recruiter quick scan
+
+| Lens | Evidence |
+| --- | --- |
+| Business analysis | Problem framing, prioritisation, requirements, roadmap and benefits case |
+| Decision modelling | MCDA, cost-benefit analysis and 1,000-run uncertainty testing |
+| Delivery thinking | 90-day stabilisation phase, release gates and outcome measures |
+| Technical assurance | Reproducible Python, reconciliation tests and an accessible prototype |
+
+**Contribution and provenance:** the source was an MSc group case. This repository is an individual portfolio reconstruction that converts the case evidence into a reproducible model, decision narrative and working prototype. Estimates remain assumptions to validate in discovery.
 
 ## Decision required
 
@@ -54,4 +70,4 @@ python analysis.py
 python -m unittest discover -s tests -v
 ```
 
-See [methodology](docs/METHODOLOGY.md), [validation status](docs/VALIDATION.md), [asset notice](ASSET_NOTICE.md), and [GitHub setup](GITHUB_SETUP.md).
+See [methodology](docs/METHODOLOGY.md), [validation status](docs/VALIDATION.md), and [asset notice](ASSET_NOTICE.md).
