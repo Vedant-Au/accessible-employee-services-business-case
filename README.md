@@ -34,7 +34,7 @@ Approve a controlled 90-day stabilisation phase that fixes shared design-system 
 
 ## Working prototype
 
-Open [`prototype/index.html`](prototype/index.html) locally to explore the remediated employee homepage pattern. It demonstrates skip navigation, semantic landmarks, labelled inputs, visible focus and text-based status. Automated validation is useful evidence, not certification; manual assistive-technology and user testing remain required.
+[Launch the interactive prototype](https://vedant-au.github.io/accessible-employee-services-business-case/) or serve [`prototype/index.html`](prototype/index.html) locally. It demonstrates skip navigation, semantic landmarks, labelled inputs, visible focus and text-based status. Automated validation is useful evidence, not certification; manual assistive-technology and user testing remain required.
 
 ## Analytical assets
 
