@@ -1,70 +1,59 @@
-# Accessible Employee Services: Investment and Delivery Model
+# Accessible Employee Services
 
-**Turning accessibility findings into a prioritised investment case, controlled delivery plan and working service prototype.**
+### A service prototype backed by prioritisation, economics and a delivery backlog
 
+[![Open the prototype](https://img.shields.io/badge/OPEN_THE_PROTOTYPE-0B6E4F?style=for-the-badge)](https://vedant-au.github.io/accessible-employee-services-business-case/)
 [![Quality checks](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml)
-[![Live prototype](https://img.shields.io/badge/open-live_prototype-0B6E4F)](https://vedant-au.github.io/accessible-employee-services-business-case/)
 
-## The decision
+## Try the service first
 
-GlobalTech, the case organisation, needed to decide whether accessibility remediation should be handled as a series of page fixes or as a governed service-improvement programme.
+The [working employee-services prototype](https://vedant-au.github.io/accessible-employee-services-business-case/) demonstrates the design response: skip navigation, semantic landmarks, labelled inputs, visible focus, plain-language status and keyboard-operable interactions.
 
-My recommendation is a **controlled 90-day stabilisation phase**: fix shared design-system barriers, establish a WCAG 2.2 AA release gate and validate the highest-risk employee journeys before scaling the full eight-month programme.
+The point of the case is not the interface alone. It connects the user experience to a funded and governed improvement programme.
 
-## Case in numbers
+## One case, four connected outputs
 
-| Evidence | Result | Why it matters |
-| --- | ---: | --- |
-| Employee and contractor population | 400,000 | Small failure rates can create enterprise-scale support demand |
-| Annual views across four services | 561,005 | The affected journeys are materially used |
-| Issues identified in the case evidence | 137 | Remediation requires prioritisation, not a flat backlog |
-| Highest-priority service | Training & Learning, 88/100 | Highest combined exposure across traffic, issues and process risk |
-| Base implementation cost | £306,273 | Investment required under the case assumptions |
-| Base three-year NPV | £787,496 | Positive scenario, subject to discovery validation |
-| Positive-NPV simulations | 98% of 1,000 | The reported model is robust across most sampled assumptions |
+| 1 · Diagnose | 2 · Prioritise | 3 · Fund | 4 · Deliver |
+| --- | --- | --- | --- |
+| 137 issues across four employee services | MCDA ranks risk, reach, criticality and feasibility | Three-year benefits case and uncertainty test | Owned backlog, acceptance criteria and prototype |
 
-![Priority scores](outputs/figures/priority_scores.png)
+Treating the work as isolated page fixes would leave the same barriers in shared components. The recommended first move is a **90-day stabilisation phase**: repair design-system patterns, introduce a WCAG 2.2 AA release gate and validate the highest-risk journeys before scaling the eight-month programme.
 
-![NPV uncertainty](outputs/figures/npv_distribution.png)
+## Investment snapshot
 
-## From analysis to delivery
+| Measure | Base result |
+| --- | ---: |
+| Population in the case | 400,000 employees and contractors |
+| Annual views across four services | 561,005 |
+| Highest-priority service | Training & Learning — 88/100 |
+| Implementation cost | £306,273 |
+| Three-year NPV | £787,496 |
+| Positive-NPV simulations | 98% of 1,000 |
 
-This implementation connects four artefacts that are often produced separately:
+![Service priority scores](outputs/figures/priority_scores.png)
 
-1. **Prioritisation model** - MCDA ranks services using traffic, issue volume, process criticality, legal/HR sensitivity and feasibility.
-2. **Benefits case** - implementation cost, annual benefit, NPV, benefit-cost ratio and payback are calculated from explicit assumptions.
-3. **Delivery backlog** - each remediation item has an owner, test method, acceptance criterion and delivery horizon.
-4. **Service prototype** - the [interactive employee portal](https://vedant-au.github.io/accessible-employee-services-business-case/) demonstrates skip navigation, landmarks, labelled inputs, visible focus and text-based status.
+The model does not turn accessibility into a guaranteed financial return. Its purpose is to make assumptions visible enough to challenge before funding. See [investment logic](docs/INVESTMENT_LOGIC.md).
 
-The key design choice was to fix reusable patterns before individual pages. Colour tokens, focus states, landmarks, headings, forms and error handling create leverage across multiple employee journeys.
+## Delivery starts with reusable barriers
 
-## What I would validate next
+The backlog gives priority to colour tokens, focus states, landmarks, headings, form labels and error handling because one shared correction can improve several journeys. Each item carries an owner, test method, acceptance criterion and delivery horizon.
 
-The financial model is decision support, not a guaranteed return. Before committing the full budget I would validate support-demand volumes, loaded staff costs, benefit attribution, remediation estimates and disabled-employee task success. Automated accessibility checks would be supplemented with keyboard, screen-reader and user testing.
+Before committing the full budget, I would validate support-demand volumes, loaded staff costs, benefit attribution, remediation estimates and disabled-employee task success. Automated checks would be supplemented by keyboard, screen-reader and moderated user testing. The current assurance position is recorded in [accessibility QA](docs/ACCESSIBILITY_QA.md).
 
-See the [methodology](docs/METHODOLOGY.md) and [validation record](docs/VALIDATION.md) for formulas, assumptions and evidence limits.
+## Explore the build
 
-## Reproduce the analysis
+```text
+prototype/            Working employee-service interface
+analysis.py           Priority and investment model
+data/reference/       Sanitised assumptions and simulation trail
+outputs/              Decision tables and figures
+tests/                Calculation and reconciliation checks
+```
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 python analysis.py
 python -m unittest discover -s tests -v
 ```
 
-## Repository map
-
-```text
-analysis.py           MCDA and financial-model reproduction
-data/reference/       Sanitised case inputs and simulation trail
-docs/                 Methodology and validation record
-outputs/              Reconciled decision tables and figures
-prototype/            Accessible employee-service implementation
-tests/                Calculation and reconciliation tests
-```
-
-## Evidence boundary
-
-This is a sanitised implementation derived from an MSc group case. GlobalTech is the case organisation. The results are not a production accessibility certification or legal advice, and the source workbook, submitted report and presentation are excluded. See [ASSET_NOTICE.md](ASSET_NOTICE.md).
+> **Case context:** GlobalTech is the case organisation in an MSc group exercise. The prototype is not a production WCAG certification, and the financial outputs depend on assumptions requiring discovery validation. Source exclusions: [ASSET_NOTICE.md](ASSET_NOTICE.md).
