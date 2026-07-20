@@ -1,6 +1,6 @@
 # Accessible Employee Services
 
-### A service prototype backed by prioritisation, economics and a delivery backlog
+> A service prototype backed by prioritisation, economics and a delivery backlog
 
 [![Open the prototype](https://img.shields.io/badge/OPEN_THE_PROTOTYPE-0B6E4F?style=for-the-badge)](https://vedant-au.github.io/accessible-employee-services-business-case/)
 [![Quality checks](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml)
