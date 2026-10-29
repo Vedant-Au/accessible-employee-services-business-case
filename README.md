@@ -15,7 +15,7 @@ The point of the case is not the interface alone. It connects the user experienc
 
 | 1 · Diagnose | 2 · Prioritise | 3 · Fund | 4 · Deliver |
 | --- | --- | --- | --- |
-| 137 issues across four employee services | MCDA ranks risk, reach, criticality and feasibility | Three-year benefits case and uncertainty test | Owned backlog, acceptance criteria and prototype |
+| 137 estimated issues across four employee services (supplied by the brief) | MCDA ranks risk, reach, criticality and feasibility | Three-year benefits case and uncertainty test | Owned backlog, acceptance criteria and prototype |
 
 Treating the work as isolated page fixes would leave the same barriers in shared components. The recommended first move is a **90-day stabilisation phase**: repair design-system patterns, introduce a WCAG 2.2 AA release gate and validate the highest-risk journeys before scaling the eight-month programme.
 
@@ -23,8 +23,8 @@ Treating the work as isolated page fixes would leave the same barriers in shared
 
 | Measure | Base result |
 | --- | ---: |
-| Population in the case | 400,000 employees and contractors |
-| Annual views across four services | 561,005 |
+| Case organisation | GlobalTech, a fictional organisation in a simulated brief |
+| Annual views across four services (supplied by the brief) | 561,005 |
 | Highest-priority service | Training & Learning — 88/100 |
 | Implementation cost | £306,273 |
 | Three-year NPV | £787,496 |
@@ -56,4 +56,4 @@ python analysis.py
 python -m unittest discover -s tests -v
 ```
 
-> **Case context:** GlobalTech is the case organisation in an MSc group exercise. The prototype is not a production WCAG certification, and the financial outputs depend on assumptions requiring discovery validation. Source exclusions: [ASSET_NOTICE.md](ASSET_NOTICE.md).
+> **Case context:** GlobalTech is a fictional organisation in an MSc group exercise, and its audit inputs (137 issues, 561,005 annual views) were supplied by the brief. The prototype is not a production WCAG certification, and the financial outputs depend on assumptions requiring discovery validation. Source exclusions: [ASSET_NOTICE.md](ASSET_NOTICE.md).
