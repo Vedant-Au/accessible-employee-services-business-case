@@ -2,6 +2,8 @@
 
 > A service prototype backed by prioritisation, economics and a delivery backlog
 
+**Role:** project and team lead, 6-person team · **Context:** simulated brief (fictional organisation), MSc Business Analysis and Consulting, University of Strathclyde · May–Jul 2026 · **[One-page summary (PDF)](one-pager.pdf)**
+
 [![Open the prototype](https://img.shields.io/badge/OPEN_THE_PROTOTYPE-0B6E4F?style=for-the-badge)](https://vedant-au.github.io/accessible-employee-services-business-case/)
 [![Quality checks](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/accessible-employee-services-business-case/actions/workflows/quality.yml)
 
